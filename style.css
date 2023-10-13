@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: #fff;
+}
+
+
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px 10px;
+}
+.column div h2{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.column div p{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+.column div a{
+text-decoration: none;
+color: #fff;
+font-size: 12px;
+margin-top: 20px;
+display: inline-block;
+}
+
+.row {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 200px;
+  margin-left: auto;
+}
+.row div{
+background: #262626;
+font-size: 13;
+font-weight: 300;
+border-radius: 10px;
+transition: background 0.2s, transform 0.2s;
+}
+
+.row:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.568);
+  padding: 16px;
+  text-align: center;
+  border: 1px solid dodgerblue;
+}
+.card img{
+  width: 200px;
+  height: 200px;
+}
+.row div:hover{
+  background: dodgerblue;
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
